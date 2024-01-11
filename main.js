@@ -1,4 +1,4 @@
-import { convertToMorseCode, convertToEnglish } from "./module";
+import { convertToMorseCode, convertToEnglish } from "./module.js";
 
 let updateText = document.getElementById("updateOnTranslation");
 document.getElementById("myForm").addEventListener("input", function (event) {

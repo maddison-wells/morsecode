@@ -1,4 +1,4 @@
-import { convertToMorseCode, convertToEnglish } from "./module";
+import { convertToMorseCode, convertToEnglish } from "./module.js";
 
 describe("convertToMorseCode() tests", () => {
   it("should have a return", () => {
