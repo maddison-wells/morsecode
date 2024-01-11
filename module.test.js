@@ -8,16 +8,19 @@ describe("convertToMorseCode() tests", () => {
       ".... . .-.. .-.. --- / .-- --- .-. .-.. -.."
     );
     expect(convertToMorseCode("ABC")).toBe(".- -... -.-.");
-    expect(convertToMorseCode(2)).toBe("");
+    expect(convertToMorseCode("2")).toBe("..---");
+    expect(convertToMorseCode("%")).toBe("");
+    expect(convertToMorseCode(" ")).toBe("/");
   });
 });
 
 describe("convertToEnglish() tests", () => {
   it("should have a return", () => {
-    expect(convertToMorseCode("--.. -.-- -..-")).toBe("ZYX");
-    expect(convertToMorseCode("--. .-. -.-- ..-. ..-. .. -. -.. --- .-.")).toBe(
+    expect(convertToEnglish(".- -... -.-.")).toBe("ABC");
+    expect(convertToEnglish("--. .-. -.-- ..-. ..-. .. -. -.. --- .-.")).toBe(
       "GRYFFINDOR"
     );
-    expect(convertToMorseCode("%")).toBe("");
+    expect(convertToEnglish("----.")).toBe("9");
+    expect(convertToEnglish("/")).toBe("");
   });
 });
