@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@babel/preset-env": "^7.23.7",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "jsdom": "^23.2.0",
+    "ts-node": "^10.9.2"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+
+  "type": "module",
+  "scripts": {
+    "start": "node main.mjs"
+  }
+}
